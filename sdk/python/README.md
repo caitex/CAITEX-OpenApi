@@ -167,7 +167,6 @@ Examples
 --------
 
 * [examples.py](examples/examples.py)
-* [option-examples.py](examples/option-examples.py)
 * [contract-examples.py](examples/contract-examples.py)
 * [ws-examples.py](examples/ws-examples.py)
 
