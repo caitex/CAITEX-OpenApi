@@ -49,7 +49,7 @@ name|type|example|description
 `quoteAsset`|string|`USDT`|Quote asset for the contract. Meaning the contract is quoted in that currency.
 `quoteAssetPrecision`|float|`0.001`|Precision of the contract price (quoteAsset).
 `inverse`|bool|`true`|Whether the contract is inverse.
-`index`|string|`BTCUSDT`|Index symbol of the underlying asset. Index price can be accessed at the `index` endpoint. For instance, `BTC-PERP-REV` uses `BTCUSDT` for index price.
+`index`|string|`BTCUSDT`|Index symbol of the underlying asset. Index price can be accessed at the `index` endpoint. For instance, `BTC-SWAP` uses `BTCUSDT` for index price.
 `contractMultiplier`|string|`true`|The multiplier of contract.
 `icebergAllowed`|string|`false`|Whether iceberg orders are allowed.
 `underlying`|string|`BTC`|name of the underlying.
@@ -114,10 +114,10 @@ name|type|example|description
         "filterType":"MIN_NOTIONAL"
       }],
       "exchangeId":"301",
-      "symbol":"BTC-PERP-REV",
-      "symbolName":"BTC-PERP-REV",
+      "symbol":"BTC-SWAP",
+      "symbolName":"BTC-SWAP",
       "status":"TRADING",
-      "baseAsset":"BTC-PERP-REV",
+      "baseAsset":"BTC-SWAP",
       "baseAssetPrecision":"1",
       "quoteAsset":"USDT",
       "quoteAssetPrecision":"0.01",
@@ -275,7 +275,7 @@ name|type|example|description
 ```js
 [
   {
-    'symbol': 'BTC-PERP-REV',
+    'symbol': 'BTC-SWAP',
     'intervalStart': '1570708800000',
     'intervalEnd': '1570737600000',
     'rate': '-0.000048567445464006'
@@ -504,7 +504,7 @@ Name|type|example|description
 `updateTime`|long|`1551062936784`|Last time this order was updated
 `orderId`|integer|`469961015902208000`|ID of the order.
 `clientOrderId`|string|`213443`|A unique ID of the order.
-`symbol`|string|`BTC-PERP-REV`|Name of the contract.
+`symbol`|string|`BTC-SWAP`|Name of the contract.
 `price`|float|`8200`|Price of the order.
 `leverage`|float|`4`|Leverage of the order.
 `origQty`|float|`1.01`|Quantity ordered
@@ -525,7 +525,7 @@ Name|type|example|description
   'updateTime': '0',
   'orderId': '469961015902208000',
   'clientOrderId': '6423344174',
-  'symbol': 'BTC-PERP-REV',
+  'symbol': 'BTC-SWAP',
   'price': '8200',
   'leverage': '12.08',
   'origQty': '5',
@@ -572,7 +572,7 @@ Name|type|example|description
 `updateTime`|long|`1551062936784`|Last time this order was updated
 `orderId`|integer|`891`|ID of the order.
 `clientOrderId`|string|`213443`|A unique ID of the order.
-`symbol`|string|`BTC-PERP-REV`|Name of the contract.
+`symbol`|string|`BTC-SWAP`|Name of the contract.
 `price`|float|`4765.29`|Price of the order.
 `leverage`|float|`4`|Leverage of the order.
 `origQty`|float|`1.01`|Quantity ordered
@@ -601,7 +601,7 @@ Name|type|example|description
   'updateTime': '0',
   'orderId': '469961015902208000',
   'clientOrderId': '6423344174',
-  'symbol': 'BTC-PERP-REV',
+  'symbol': 'BTC-SWAP',
   'price': '8200',
   'leverage': '12.08',
   'origQty': '5',
@@ -683,7 +683,7 @@ Name|type|example|description
 `updateTime`|long|`1551062936784`|Last time this order was updated
 `orderId`|integer|`891`|ID of the order.
 `clientOrderId`|string|`213443`|A unique ID of the order.
-`symbol`|string|`BTC-PERP-REV`|Name of the contracts.
+`symbol`|string|`BTC-SWAP`|Name of the contracts.
 `price`|float|`4765.29`|Price of the order.
 `leverage`|float|`4`|Leverage of the order.
 `origQty`|float|`1.01`|Quantity ordered
@@ -706,7 +706,7 @@ Name|type|example|description
     'updateTime': '0',
     'orderId': '469965509788581888',
     'clientOrderId': '1570760253946',
-    'symbol': 'BTC-PERP-REV',
+    'symbol': 'BTC-SWAP',
     'price': '8502.34',
     'leverage': '20',
     'origQty': '222',
@@ -754,7 +754,7 @@ Name|type|example|description
 `updateTime`|long|`1551062936784`|Last time this order was updated
 `orderId`|integer|`891`|ID of the order.
 `clientOrderId`|string|`213443`|A unique ID of the order.
-`symbol`|string|`BTC-PERP-REV`|Name of the contracts.
+`symbol`|string|`BTC-SWAP`|Name of the contracts.
 `price`|float|`4765.29`|Price of the order.
 `leverage`|float|`4`|Leverage of the order.
 `origQty`|float|`1.01`|Quantity ordered
@@ -777,7 +777,7 @@ Name|type|example|description
     'updateTime': '0',
     'orderId': '469961015902208000',
     'clientOrderId': '6423344174',
-    'symbol': 'BTC-PERP-REV',
+    'symbol': 'BTC-SWAP',
     'price': '8200',
     'leverage': '12.08',
     'origQty': '5',
@@ -821,7 +821,7 @@ Name|type|example|description
 `time`|long|`1551062936784`|Timestamp when the order is created.
 `tradeId`|long|`49366`|The ID for the trade
 `orderId`|integer|`891`|ID of the order.
-`symbolId`|string|`BTC-PERP-REV`|Name of the contract.
+`symbolId`|string|`BTC-SWAP`|Name of the contract.
 `price`|float|`4765.29`|Price of the trade.
 `quantity`|float|`1.01`|Quantity of the trade.
 `feeTokenId`|string|`USDT`|Fee token name.
@@ -839,7 +839,7 @@ Name|type|example|description
     'tradeId': '469968263995080704',
     'orderId': '469968263793737728',
     'accountId': '456552319339779840',
-    'symbolId': 'BTC-PERP-REV',
+    'symbolId': 'BTC-SWAP',
     'price': '8531.17',
     'quantity': '100',
     'feeTokenId': 'TBTC',
@@ -872,7 +872,7 @@ Parameter|type|required|default|description
 ### **Response:**
 Name|type|example|description
 ------------ | ------------ | ------------ | ------------
-`symbol`|string|`BTC-PERP-REV`|Name of the contract.
+`symbol`|string|`BTC-SWAP`|Name of the contract.
 `side`|string|`LONG`|Position side.
 `avgPrice`|float|`100`|Average price for opening the position.
 `position`|float|`20`|Amount of contracts opened
@@ -892,7 +892,7 @@ Name|type|example|description
 ```js
 [
   {
-    'symbol': 'BTC-PERP-REV',
+    'symbol': 'BTC-SWAP',
     'side': 'LONG',
     'avgPrice': '8183.11',
     'position': '1100',
@@ -971,14 +971,14 @@ Parameter|type|required|default|description
 
 Name|type|example|description
 ------------ | ------------ | ------------ | ------------
-`symbol`|string|`BTC-PERP-REV`|The name of the contract.
+`symbol`|string|`BTC-SWAP`|The name of the contract.
 `margin`|float|`12.3`|Updated margin for the symbol.
 `timestamp`|long|`1541161088303`|Updated timestamp
 
 ### **Example:**
 ```js
 {
-  'symbol':'BTC-PERP-REV',
+  'symbol':'BTC-SWAP',
   'margin': 15,
   'timestamp': 1541161088303
 }
