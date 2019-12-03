@@ -3,6 +3,11 @@ The base url of broker open API can be found [here](doc/endpoint.md)
 
 # Broker Contract Public Endpoint
 
+## `Symbols`
+
+BTC-SWAP  
+USDT1911130000
+
 ## `brokerInfo`
 
 Current broker trading rules and symbol information.

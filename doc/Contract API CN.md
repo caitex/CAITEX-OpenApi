@@ -4,6 +4,12 @@ Broker Open API的地址请见[这里](endpoint.md)
 
 # Broker 合约公共端点
 
+## `Symbols`
+
+BTC-SWAP  
+USDT1911130000
+
+
 ## `brokerInfo`
 
 获取当前broker的交易规则和合约symbol的信息（精度单位等信息），包括合约的风险限额和乘数等信息。
